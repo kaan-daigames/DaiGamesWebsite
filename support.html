@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support | Dai Games, Inc.</title>
+  <meta name="description" content="Get help with Dai Games titles: contact support, manage or delete your account, and report bugs.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/work-sans-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/arvo-700.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="Dai Games home">
+        <img src="favicon.svg" alt="" width="36" height="36">
+        <span>Dai Games</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-head">
+      <div class="container">
+        <h1>Support</h1>
+        <p>Need help with one of our games, your account, or want to report a bug? We read every message and we're happy to help.</p>
+      </div>
+    </div>
+
+    <div class="container prose">
+      <div class="support-grid">
+        <section class="support-card" aria-labelledby="email-title">
+          <h2 id="email-title">Contact support</h2>
+          <p>Email us and we'll get back to you as soon as we can, usually within a few business days.</p>
+          <p class="email-text">kaandai@daigames.dev</p>
+          <div class="email-block">
+            <div class="email-actions">
+              <a class="btn btn-dark" href="mailto:kaandai@daigames.dev?subject=Support%20request">Email support</a>
+              <button type="button" class="btn btn-outline" data-copy-email="kaandai@daigames.dev">Copy address</button>
+            </div>
+            <p class="webmail">Use email in your browser? Write from
+              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kaandai@daigames.dev&amp;su=Support%20request" target="_blank" rel="noopener">Gmail</a> or
+              <a href="https://outlook.live.com/mail/0/deeplink/compose?to=kaandai@daigames.dev&amp;subject=Support%20request" target="_blank" rel="noopener">Outlook</a>.
+            </p>
+            <p class="copy-status" role="status" aria-live="polite"></p>
+          </div>
+
+          <h3>To help us respond faster, include</h3>
+          <ul>
+            <li>The name of the game</li>
+            <li>Your device model and iOS or Android version</li>
+            <li>The game's version number, if you can find it</li>
+            <li>What happened and what you expected, with a screenshot or screen recording if possible</li>
+          </ul>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <details>
+            <summary>Do I need an account to play?</summary>
+            <p>No. You can play the whole game without signing in, and your progress stays on your device. An account is only needed if you want your times on the online leaderboard.</p>
+          </details>
+          <details>
+            <summary>How do I delete my account?</summary>
+            <p>Open the game and go to <strong>Settings › DELETE ACCOUNT</strong>. This immediately and permanently deletes your account, your leaderboard times and the progress stored on your device. If you can't open the game, email us and we'll delete it for you.</p>
+          </details>
+          <details>
+            <summary>How do I keep my times when I change phones?</summary>
+            <p>Sign in with the same Apple account on your new device. Your best times are restored from the leaderboard. Progress from playing without an account is stored only on the old device and can't be transferred.</p>
+          </details>
+          <details>
+            <summary>Can I change my leaderboard nickname?</summary>
+            <p>Your nickname is shown publicly next to your times. If you need it changed or removed, email us and include the nickname so we can find your account.</p>
+          </details>
+          <details>
+            <summary>I found a bug. How do I report it?</summary>
+            <p>Thank you! Email us with the details listed on this page. Screenshots or a short screen recording help a lot.</p>
+          </details>
+          <details>
+            <summary>What information do you collect?</summary>
+            <p>As little as possible. Read the full details in our <a href="privacy.html">Privacy Policy</a>.</p>
+          </details>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer dark">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="favicon.svg" alt="" width="32" height="32">
+        <div>
+          <strong>Dai Games, Inc.</strong>
+          <span>&copy; <span id="year">2026</span> Dai Games, Inc. All rights reserved.</span>
+        </div>
+      </div>
+      <ul class="footer-links" aria-label="Footer">
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="support.html" aria-current="page">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="email.js"></script>
+</body>
+</html>
