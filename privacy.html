@@ -41,13 +41,14 @@
     <article class="container prose">
       <p>Echo Protocol (“the game”) is a puzzle game for iPhone made by Dai Games, Inc. This policy explains what information the game uses, why, and how you can delete it.</p>
 
-      <p class="callout">The short version: <strong>you can play the whole game without an account, and then nothing about you leaves your device.</strong> An account is only needed for the online leaderboard, and you can delete it at any time from inside the game.</p>
+      <p class="callout">The short version: <strong>you can play the whole game without an account.</strong> The game shows ads from Google AdMob, which receives device information to show and measure ads; ads are only personalised if you allow it. An account is only needed for the online leaderboard, and you can delete it at any time from inside the game.</p>
 
       <nav class="toc" aria-labelledby="toc-title">
         <h2 id="toc-title">Contents</h2>
         <ol>
           <li><a href="#without-account">Playing without an account</a></li>
           <li><a href="#leaderboard">Signing in for the leaderboard</a></li>
+          <li><a href="#ads">Ads (Google AdMob)</a></li>
           <li><a href="#dont-do">What we don't do</a></li>
           <li><a href="#storage">Where the information is stored</a></li>
           <li><a href="#retention">How long information is kept</a></li>
@@ -60,7 +61,7 @@
       </nav>
 
       <h2 id="without-account">1. Playing without an account</h2>
-      <p>If you don't sign in, the game stores your progress <strong>only on your device</strong>: best times, stars, completed tutorials and sound settings. This information is not sent to us or anyone else, and it is removed when you delete the game.</p>
+      <p>If you don't sign in, the game stores your progress <strong>only on your device</strong>: best times, stars, completed tutorials and sound settings. This information is not sent to us or anyone else, and it is removed when you delete the game. The ads in the game work the same with or without an account; see <a href="#ads">section 3</a> for what Google receives.</p>
 
       <h2 id="leaderboard">2. Signing in for the leaderboard</h2>
       <p>Signing in is optional. If you choose <strong>Continue with Apple</strong> to put your times on the leaderboard, the game uses the following:</p>
@@ -95,27 +96,41 @@
         </table>
       </div>
 
-      <p>The game does <strong>not</strong> ask Apple for your name, and it does not collect your location, contacts, photos, microphone, camera or any other personal information.</p>
+      <p>The game does <strong>not</strong> ask Apple for your name, and the game itself does not collect your location, contacts, photos, microphone, camera or any other personal information.</p>
       <p>Your nickname and best times are <strong>public</strong>: anyone who opens the leaderboard in the game can see them.</p>
       <p>When you sign in, Apple gives the game a short-lived sign-in token. The game sends it once to our server to confirm your Apple sign-in, and the server then gives the game its own login tokens. These tokens are kept on your device so you stay signed in.</p>
 
-      <h2 id="dont-do">3. What we don't do</h2>
+      <h2 id="ads">3. Ads (Google AdMob)</h2>
+      <p>The game shows ads from Google AdMob: a full-screen ad between some levels, and rewarded ads that only play when you choose them (Revive, an AD heal, or AD Shoot for extra bullets).</p>
+      <p>To show and measure ads, Google's ad software in the game receives information such as your IP address, device model, operating system and app version, an approximate location worked out from your IP address, how you interact with ads, and diagnostic data. It only receives your device's advertising identifier (IDFA) if you allow tracking.</p>
+      <p>You decide how your information is used for ads:</p>
       <ul>
-        <li>No advertising and no ad tracking.</li>
+        <li><strong>Europe (EEA, UK and Switzerland):</strong> before any ads are shown, Google's consent form asks whether your information may be used for personalised ads. You can change your answer at any time in <span class="path">Settings › Privacy Choices</span> in the game.</li>
+        <li><strong>Apple's tracking popup:</strong> the game asks whether it may track you across other companies' apps and websites. If you say no, the IDFA is not shared. You can change this at any time in <span class="path">iPhone Settings › Privacy &amp; Security › Tracking</span>.</li>
+      </ul>
+      <p>If you decline, the game still shows ads, but they are not personalised.</p>
+      <p>We don't receive any personal information about you from Google, only total numbers such as how many ads were shown.</p>
+      <p>See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a> and <a href="https://myadcenter.google.com" target="_blank" rel="noopener">Google's ad settings</a>.</p>
+
+      <h2 id="dont-do">4. What we don't do</h2>
+      <ul>
+        <li>No ad tracking unless you allow it in Apple's tracking popup.</li>
         <li>No selling or renting of your information.</li>
-        <li>No third-party analytics or tracking tools in the game.</li>
+        <li>No third-party analytics tools; Google AdMob (<a href="#ads">section 3</a>) is the only third party that receives data for ads.</li>
         <li>No in-app purchases; the game does not handle payment information.</li>
       </ul>
 
-      <h2 id="storage">4. Where the information is stored</h2>
+      <h2 id="storage">5. Where the information is stored</h2>
       <p>Account information (Apple user ID, optional email, nickname and best times) is stored on the game's server, which is hosted by a cloud hosting provider. All communication between the game and the server is encrypted with HTTPS.</p>
+      <p>Ad information (<a href="#ads">section 3</a>) is collected and processed by Google under its own privacy policy, not on the game's server.</p>
       <p>The game is built with the Unity engine. Unity may receive basic, anonymous technical information about the device (such as the device model and operating system version) to keep the engine working well. This information does not identify you. See <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity's Privacy Policy</a>.</p>
       <p>Sign in with Apple is provided by Apple. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
 
-      <h2 id="retention">5. How long information is kept</h2>
+      <h2 id="retention">6. How long information is kept</h2>
       <p>Your account information is kept for as long as your account exists. If you sign out, your account stays on the server so you can sign in again later; your progress on the device is kept too.</p>
+      <p>Ad information is kept by Google according to its own retention rules.</p>
 
-      <h2 id="delete">6. Deleting your account</h2>
+      <h2 id="delete">7. Deleting your account</h2>
       <p>You can delete your account at any time inside the game: <span class="path">Settings › DELETE ACCOUNT</span>.</p>
       <p>This permanently deletes, right away:</p>
       <ul>
@@ -125,17 +140,18 @@
       </ul>
       <p>You can also stop the game's use of Sign in with Apple from your iPhone: <span class="path">Settings › [your name] › Sign-In &amp; Security › Sign in with Apple › Echo Protocol › Stop Using Apple ID</span>. The game then signs you out the next time it starts.</p>
       <p>If you can't open the game, email us (address below) and we will delete your account by hand.</p>
+      <p>Deleting your account does not affect information Google holds for ads; use <span class="path">Settings › Privacy Choices</span>, Apple's tracking setting or Google's own tools for that.</p>
 
-      <h2 id="children">7. Children</h2>
-      <p>The game is not directed at children under 13, and we do not knowingly collect personal information from them. Playing without an account collects nothing at all. If you believe a child under 13 has created an account, contact us and we will delete it.</p>
+      <h2 id="children">8. Children</h2>
+      <p>The game is not directed at children under 13, and we do not knowingly collect personal information from them. Without an account we receive no personal information, though Google AdMob still receives device information to show ads (<a href="#ads">section 3</a>). If you believe a child under 13 has created an account, contact us and we will delete it.</p>
 
-      <h2 id="rights">8. Your rights</h2>
-      <p>Depending on where you live (for example under the GDPR in the EU/UK or the CCPA in California), you may have the right to access, correct, export or delete your information, and to object to its use. You can delete everything yourself from the game, or email us for any other request. We will answer within 30 days.</p>
+      <h2 id="rights">9. Your rights</h2>
+      <p>Depending on where you live (for example under the GDPR in the EU/UK or the CCPA in California), you may have the right to access, correct, export or delete your information, and to object to its use. You can delete everything yourself from the game, or email us for any other request. We will answer within 30 days. For information used for ads, use <span class="path">Settings › Privacy Choices</span>, Apple's tracking setting, or contact Google.</p>
 
-      <h2 id="changes">9. Changes to this policy</h2>
+      <h2 id="changes">10. Changes to this policy</h2>
       <p>If this policy changes, the new version will be published on this page with a new effective date. Important changes will also be mentioned in the game's App Store release notes.</p>
 
-      <h2 id="contact">10. Contact</h2>
+      <h2 id="contact">11. Contact</h2>
       <p>Dai Games, Inc.<br>
         Email: <a href="mailto:kaandai@daigames.dev">kaandai@daigames.dev</a></p>
 
