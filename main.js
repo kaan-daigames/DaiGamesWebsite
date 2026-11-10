@@ -5,6 +5,24 @@
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  // Underline the nav link of the section currently in view
+  var navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  function updateNav() {
+    var current = null;
+    var atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    navLinks.forEach(function (a) {
+      var section = document.querySelector(a.getAttribute("href"));
+      if (section && (atBottom || section.getBoundingClientRect().top <= window.innerHeight / 3)) current = a;
+    });
+    navLinks.forEach(function (a) {
+      if (a === current) a.setAttribute("aria-current", "location");
+      else a.removeAttribute("aria-current");
+    });
+  }
+  window.addEventListener("scroll", updateNav, { passive: true });
+  window.addEventListener("resize", updateNav);
+  updateNav();
+
   // ---- Games list (data comes from games.js) ----
   var list = document.getElementById("game-list");
   var games = Array.isArray(window.GAMES) ? window.GAMES : [];
