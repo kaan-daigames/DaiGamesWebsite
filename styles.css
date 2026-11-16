@@ -97,7 +97,7 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); letter-spacing: -.01em; }
 .webmail { margin-top: 12px; font-size: .95rem; color: var(--muted); }
 .webmail a { color: var(--ink); font-weight: 700; text-underline-offset: 3px; }
 .copy-status { margin-top: 8px; font-size: .9rem; color: var(--ink); min-height: 1.4em; }
-.value-block { margin-top: auto; padding-top: 10px; }
+.value-block { padding-top: 10px; }
 .contact-card .value-block a.value { padding-top: 0; margin-top: 0; }
 .value-block .email-actions { margin-top: 12px; }
 
