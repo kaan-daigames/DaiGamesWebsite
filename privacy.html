@@ -41,7 +41,7 @@
     <article class="container prose">
       <p>Echo Protocol (“the game”) is a puzzle game for iPhone, iPad and Android made by Dai Games, Inc. This policy explains what information the game uses, why, and how you can delete it.</p>
 
-      <p class="callout">The short version: <strong>you can play the whole game without signing in.</strong> The game gives every player an anonymous guest account, with no name or email, so finished times can be checked for cheating. The game shows ads from Google AdMob, which receives device information to show and measure ads; you can choose whether ads are personalised. Optional in-app purchases are paid through Apple or Google Play, and we never see your payment details. An account is only needed for the online leaderboard, and you can delete it at any time from inside the game.</p>
+      <p class="callout">The short version: <strong>you can play the whole game without signing in.</strong> The game gives every player a guest account, a random ID without your name, email or contact details, so finished times can be checked for cheating. The game shows ads from Google AdMob, which receives device information to show and measure ads; you can choose whether ads are personalised. Optional in-app purchases are paid through Apple or Google Play, and we never see your payment details. Signing in is only needed for the online leaderboard, and you can delete that account at any time from inside the game.</p>
 
       <nav class="toc" aria-labelledby="toc-title">
         <h2 id="toc-title">Contents</h2>
@@ -63,12 +63,12 @@
 
       <h2 id="without-account">1. Playing without signing in</h2>
       <p>Your best times, stars, completed tutorials and sound settings are stored <strong>on your device</strong> and removed when you delete the game. Items you buy are unlocked on your device and can be restored from the store (<a href="#purchases">section 4</a>).</p>
-      <p>The first time the game starts, it creates an <strong>anonymous guest account</strong> on our server. It is a random ID with no name, email or other personal information, and the server's login tokens for it are kept on your device. The game uses it to check finished times for cheating, for every player, signed in or not:</p>
+      <p>The first time the game starts, it creates a <strong>guest account</strong> on our server. It is a random ID that doesn't include your name, email or contact details, and the server's login tokens for it are kept on your device. The game uses it to check finished times for cheating, for every player, signed in or not:</p>
       <ul>
         <li>When you start a level, the game tells the server which level and whether you play on iPhone/iPad or Android, and the server returns an ID for that attempt.</li>
         <li>When you finish, the game sends your time with that ID.</li>
-        <li>If you watch a rewarded ad during a level, the game tells the server when it opened and closed and whether you got the reward, so the time spent in the ad isn't counted against you.</li>
-        <li>On iPhone and iPad, the game also creates a security key on your device with Apple's App Attest, so the server can confirm the time came from the real game. The key contains no personal information.</li>
+        <li>If you watch a rewarded ad during a level, the game tells the server when it opened and closed and whether you got the reward, so the time spent in the ad isn't counted against you. Google's ad service also confirms to our server that the ad was watched to the end, using an ID the game creates for that ad view.</li>
+        <li>On iPhone and iPad, the game also creates a security key on your device with Apple's App Attest, so the server can confirm the time came from the real game. The key doesn't include your name or contact details.</li>
       </ul>
       <p>A guest's times are not shown on the public leaderboard. If you later sign in (<a href="#leaderboard">section 2</a>), your guest times move to your account. The ads in the game work the same either way; see <a href="#ads">section 3</a> for what Google receives.</p>
 
@@ -120,7 +120,7 @@
       <p>When you sign in, Apple or Google gives the game a short-lived sign-in token. The game sends it once to our server to confirm your sign-in, and the server then gives the game its own login tokens. These tokens are kept on your device so you stay signed in.</p>
 
       <h2 id="ads">3. Ads (Google AdMob)</h2>
-      <p>The game shows ads from Google AdMob: a full-screen ad between some levels, and rewarded ads that only play when you choose them (Revive, Heal and Extra Bullet).</p>
+      <p>The game shows ads from Google AdMob: a full-screen ad between some levels, a banner at the bottom of the leaderboard, and rewarded ads that only play when you choose them (Revive, Heal and Extra Bullet).</p>
       <p>To show and measure ads, Google's ad software in the game receives information such as your IP address, device model, operating system and app version, an approximate location worked out from your IP address, how you interact with ads, and diagnostic data. On iPhone and iPad, it only receives your device's advertising identifier (IDFA) if you allow tracking. On Android, it receives your device's advertising ID unless you have deleted it in your Android settings.</p>
       <p>You decide how your information is used for ads:</p>
       <ul>
@@ -130,8 +130,8 @@
         <li><strong>Android advertising ID:</strong> you can delete or reset it at any time in your Android settings, usually under <span class="path">Settings › Privacy › Ads</span> or <span class="path">Settings › Google › Ads</span>. Once deleted, it is not shared.</li>
       </ul>
       <p>If you decline, the game still shows ads, but they are not personalised.</p>
-      <p>If you buy Remove Ads, the Premium Bundle or the All-In-One Bundle, the full-screen ads between levels stop, and you get rewarded-ad rewards (Revive, Heal and Extra Bullet) without watching an ad (<a href="#purchases">section 4</a>).</p>
-      <p>We don't receive any personal information about you from Google, only total numbers such as how many ads were shown.</p>
+      <p>If you buy Remove Ads, the Premium Bundle or the All-In-One Bundle, the game shows no ads at all, including the leaderboard banner, and you get rewarded-ad rewards (Revive, Heal and Extra Bullet) without watching an ad (<a href="#purchases">section 4</a>).</p>
+      <p>We don't receive any personal information about you from Google. Apart from the rewarded-ad confirmation in <a href="#without-account">section 1</a>, we only receive total numbers, such as how many ads were shown.</p>
       <p>See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a> and <a href="https://myadcenter.google.com" target="_blank" rel="noopener">Google's ad settings</a>.</p>
 
       <h2 id="purchases">4. In-app purchases</h2>
@@ -151,7 +151,7 @@
       </ul>
 
       <h2 id="storage">6. Where the information is stored</h2>
-      <p>Account information (the guest account ID and its times, and once you sign in your Apple user ID or Google account ID, email, nickname, best times and leaderboard look) is stored on the game's server, which is hosted by a cloud hosting provider. All communication between the game and the server is encrypted with HTTPS.</p>
+      <p>Account information (the guest account ID, its level attempts and times, and once you sign in your Apple user ID or Google account ID, email, nickname, best times and leaderboard look) is stored on the game's server, which is hosted by a cloud hosting provider. All communication between the game and the server is encrypted with HTTPS.</p>
       <p>Ad information (<a href="#ads">section 3</a>) is collected and processed by Google under its own privacy policy, not on the game's server.</p>
       <p>The game is built with the Unity engine. Unity may receive basic, anonymous technical information about the device (such as the device model and operating system version) to keep the engine working well. This information does not identify you. See <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity's Privacy Policy</a>.</p>
       <p>Sign in with Apple and the App Store are provided by Apple. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
@@ -159,7 +159,7 @@
 
       <h2 id="retention">7. How long information is kept</h2>
       <p>Your account information is kept for as long as your account exists. If you sign out, your account stays on the server so you can sign in again later; your progress on the device is kept too, and the game starts a new guest account.</p>
-      <p>A guest account is kept while it exists on the server. If you delete the game without signing in, the device loses its link to the guest account, and nothing in it identifies you.</p>
+      <p>Guest accounts that haven't been used for 12 months are deleted automatically, with their times. If you delete the game without signing in, the device loses its link to the guest account, which doesn't include your name or contact details, and it is deleted after those 12 months.</p>
       <p>Ad information is kept by Google according to its own retention rules.</p>
 
       <h2 id="delete">8. Deleting your account</h2>
@@ -175,14 +175,14 @@
       <p>On Android, you can also remove the game's access to your Google Account at <a href="https://myaccount.google.com/connections" target="_blank" rel="noopener">myaccount.google.com/connections</a>.</p>
       <p>Deleting your account does not cancel or refund your purchases. They stay with your Apple or Google Account and can be restored (<a href="#purchases">section 4</a>).</p>
       <p>If you can't open the game, email us (address below) and we will delete your account by hand.</p>
-      <p>If you never signed in, there is no Delete Account button, because the guest account holds no personal information. You can ask us by email to delete guest data; if you sign in first, your guest times move to your account and are deleted with it.</p>
+      <p>If you never signed in, there is no Delete Account button. Guest accounts aren't linked to your name or contact details, and the game doesn't show the guest ID, so we can't tell which guest account is yours and can't delete one on request. Guest accounts are deleted automatically after 12 months without use (<a href="#retention">section 7</a>). If you sign in, your guest times move to your account and are deleted with it.</p>
       <p>Deleting your account does not affect information Google holds for ads; use <span class="path">Settings › Privacy Choices</span>, Apple's tracking setting, your Android advertising ID setting or Google's own tools for that.</p>
 
       <h2 id="children">9. Children</h2>
-      <p>The game is not directed at children under 13, and we do not knowingly collect personal information from them. Without signing in we receive no personal information (the guest account is anonymous, see <a href="#without-account">section 1</a>), though Google AdMob still receives device information to show ads (<a href="#ads">section 3</a>). If you believe a child under 13 has created an account, contact us and we will delete it. Parents can control purchases with Apple's Screen Time and Ask to Buy settings, or with Google Play's purchase approvals and Family Link.</p>
+      <p>The game is not directed at children under 13, and we do not knowingly collect personal information from them. Without signing in we receive no name, email or contact details (the guest account is only a random ID, see <a href="#without-account">section 1</a>), though Google AdMob still receives device information to show ads (<a href="#ads">section 3</a>). If you believe a child under 13 has created an account, contact us and we will delete it. Parents can control purchases with Apple's Screen Time and Ask to Buy settings, or with Google Play's purchase approvals and Family Link.</p>
 
       <h2 id="rights">10. Your rights</h2>
-      <p>Depending on where you live (for example under the GDPR in the EU/UK or the CCPA in California), you may have the right to access, correct, export or delete your information, and to object to its use. You can delete everything yourself from the game, or email us for any other request. We will answer within 30 days. For information used for ads, use <span class="path">Settings › Privacy Choices</span>, Apple's tracking setting, your Android advertising ID setting, or contact Google.</p>
+      <p>Depending on where you live (for example under the GDPR in the EU/UK or the CCPA in California), you may have the right to access, correct, export or delete your information, and to object to its use. You can delete everything yourself from the game (if you signed in), or email us for any other request. We will answer within 30 days. For information used for ads, use <span class="path">Settings › Privacy Choices</span>, Apple's tracking setting, your Android advertising ID setting, or contact Google.</p>
 
       <h2 id="changes">11. Changes to this policy</h2>
       <p>If this policy changes, the new version will be published on this page with a new effective date. Important changes will also be mentioned in the game's App Store and Google Play release notes.</p>
